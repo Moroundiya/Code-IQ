@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Course</title>
+    <link type="text/css" rel="stylesheet" href="css/watch course.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/0a2fc2b5de.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/LOGO.png" alt="" class="navbar-brand navbar-logo">
+            </a>
+            <div id="nav-icon-anim" onclick="changeStyle()"  class="" data-bs-toggle="collapse"
+            data-bs-target="" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            <div class="shownavbar" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" style="margin-top: 30px;">
+                        <a href="index.html" class="active-menu nav-link">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span>
+                            My Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span>
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span>
+                            Fellowship
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span>
+                            Comic
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span>
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span>
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <div class="container-fluid" style="width: 100%; height: 100%; display: flex;">
+        <div class="sidebar">
+            <div class="brand-logo">
+                <img src="images/LOGO.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html" class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                            My Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span>  &nbsp;
+                            Fellowship
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                            Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-collapse">
+            <div class="brand-logo">
+                <img src="images/favicon.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html" class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=" course">
+             <div class="collapse-account">
+                <h4>Courses</h4>
+                <div class="account-icons">
+                    <div class="user-image">
+                        <img src="images/user.png" alt="">
+                    </div>
+                    <p class="user-name">Adeola Ayo</p>
+                    <img src="images/logout.png" alt="" class="down-arrow">
+                    <img src="images/notification.png" class="notification-icon" alt="">
+                    <img src="images/setting-icon.png" alt="" class="setting-icon">
+                </div>
+            </div>
+            <div class="search-container2">
+                <img src="images/search-icon.png" alt="" class="search-icon">
+                <input type="text" class="input-search" placeholder="Search Courses, Documents, Activities... ">
+            </div>
+            <div class="search-div">
+                <div class="search-container">
+                    <img src="images/search-icon.png" alt="" class="search-icon">
+                    <input type="text" class="input-search" placeholder="Search Courses, Documents, Activities... ">
+                </div>
+            </div>
+            <div class="video-course row">
+                <div class="video-course-watch col-lg-8">
+                    <p>
+                        Course - A complete UI/UX guide
+                    </p>
+                    <video controls class="video-url">
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <div class="course-video-list col-lg-4">
+                    <p class="lesson">Lesson</p>
+                    <div class="parent-div">
+                        <div>
+                            <div class="child-div">
+                                <span class="iconify" data-icon="bx:bxs-bar-chart-square"></span>
+                            </div>
+                        </div>
+                        <div class="video-list-text-container">
+                            <p class="video-list-text">Custom Control</p>
+                            <p class="video-list-text2">Lesson 4 . 11 min</p>
+                        </div>
+                    </div>
+                    <div class="parent-div">
+                        <div>
+                            <div class="child-div">
+                                <span class="iconify" data-icon="fa-solid:pencil-alt"></span>
+                            </div>
+                        </div>
+                        <div class="video-list-text-container">
+                            <p class="video-list-text">Create a Table view</p>
+                            <p class="video-list-text2">Lesson 5 . 13 min</p>
+                        </div>
+                    </div>
+                    <div class="parent-div">
+                        <div>
+                            <div class="child-div">
+                                <span class="iconify" data-icon="akar-icons:shopping-bag"></span>
+                            </div>
+                        </div>
+                        <div class="video-list-text-container">
+                            <p class="video-list-text">Placing Image</p>
+                            <p class="video-list-text2">Lesson 6 . 7min</p>
+                        </div>
+                    </div>
+                    <div class="parent-div">
+                        <div>
+                            <div class="child-div">
+                                <span class="iconify" data-icon="wpf:fingerprint-scan"></span>
+                            </div>
+                        </div>
+                        <div class="video-list-text-container">
+                            <p class="video-list-text">Adding Plug in</p>
+                            <p class="video-list-text2">Lesson 7 . 12 min</p>
+                        </div>
+                    </div>
+                    <div class="parent-div">
+                        <div>
+                            <div class="child-div">
+                                <span class="iconify" data-icon="bi:shield-fill-x"></span>
+                            </div>
+                        </div>
+                        <div class="video-list-text-container">
+                            <p class="video-list-text">Spice</p>
+                            <p class="video-list-text2">Lesson 8 . 50 min</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row course-note">
+                <div class="col-lg-8">
+                    <p class="course-title">Lesson 1 INTRODUCTION TO UI/UX</p>
+                    <div class="course-account">
+                        <img src="images/course account.png" alt="">
+                        <p>@dianneed</p>
+                    </div>
+                    <p class="course-content">
+                        In this lesson, you use navigation controllers and segues to create the navigation flow <br>
+                        of the FoodTracker app. At the end of the lesson, you’ll have a complete navigation scheme and
+                        interaction flow for <br>the app.
+                    </p>
+                    <p id="note">
+                        Add Notes
+                    </p>
+                    <div class="write-note">
+                        <input type="text" placeholder="Create a New note While Studying">
+                        <span class="iconify add-icon" data-icon="whh:circleadd"></span>
+                    </div>
+                    <div class="intro">
+                        <p>1. Introduction to UI/UX</p>
+                        <p>
+                            <span class="iconify" data-icon="la:pen" data-rotate="90deg" data-flip="horizontal"></span>
+                            <span class="iconify delete" data-icon="fluent:delete-24-filled"
+                                data-flip="horizontal"></span>
+                        </p>
+                    </div>
+                    <input type="text" class="last-input" placeholder="whats is uiux ?">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="code iq.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

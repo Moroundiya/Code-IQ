@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/dashboard.css">
+    <link type="text/css" rel="stylesheet" href="css/navbar.css">
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="images/favicon.png">
+    <title>Dashboard</title>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/LOGO.png" alt="" class="navbar-brand navbar-logo">
+            </a>
+            <div id="nav-icon-anim" onclick="changeStyle()" class="" data-bs-toggle="collapse" data-bs-target=""
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="shownavbar" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" style="margin-top: 30px;">
+                        <a href="index.html" class="active-menu nav-link">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span>
+                            My Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span>
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span>
+                            Fellowship
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span>
+                            Comic
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span>
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span>
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="width: 100%; height:100%; display: flex;">
+        <div class="sidebar">
+            <div class="brand-logo">
+                <img src="images/LOGO.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html" class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                            My Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span> &nbsp;
+                            Fellowship
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                            Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-collapse">
+            <div class="brand-logo">
+                <img src="images/favicon.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html" class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row dashboard">
+            <div class="col-lg-8">
+                <div class="collapse-account">
+                    <h4>My Dashboard </h4>
+                    <div class="account-icons">
+                        <div class="user-image">
+                            <img src="images/user.png" alt="">
+                        </div>
+                        <p class="user-name">Adeola Ayo</p>
+                        <img src="images/logout.png" alt="" class="down-arrow">
+                        <img src="images/notification.png" class="notification-icon" alt="">
+                        <img src="images/setting-icon.png" alt="" class="setting-icon">
+                    </div>
+                </div>
+                <div class="search-container2">
+                    <img src="images/search-icon.png" alt="" class="search-icon">
+                    <input type="text" class="input-search" placeholder="Search Courses, Documents, Activities... ">
+                </div>
+                <div class="welcome-container">
+                    <div class="welcome-text">
+                        <h3>Welcome back, Ayo</h3>
+                        <p>
+                            You’ve learned 70% of your goal this week! <br>
+                            Keep it up and improve your progeress.
+                        </p>
+                    </div>
+                    <div class="welcome-hand">
+                        <img src="images/hand.svg" alt="">
+                    </div>
+                    <div class="welcome-image">
+                        <img src="images/Space.svg" alt="">
+                    </div>
+                </div>
+                <div class="row award-container">
+                    <div class="badge-container col-sm-6">
+                        <p>BADGES</p>
+                        <p>Your latest Achievements</p>
+                        <div class="achievement-tag">
+                            <div style="width: 35px; height: 35px; background-color: #BD69CC; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                            <div style="width: 35px; height: 35px; background-color: #7884CD; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                            <div style="width: 35px; height: 35px; background-color: #7FC881; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                            <div style="width: 35px; height: 35px; background-color: #FFB840; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                            <div style="width: 35px; height: 35px; background-color: #E77271; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                        </div>
+                        <button class="view-all"> View All</button>
+                    </div>
+                    <div class="certificate-container col-sm-6">
+                        <p>CERTIFICATE (5)</p>
+                        <p>Your latest Achievements</p>
+                        <div class="achievement-tag">
+                            <div style="width: 35px; height: 35px; background-color: #BD69CC; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                            <div style="width: 35px; height: 35px; background-color: #7884CD; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                            <div style="width: 35px; height: 35px; background-color: #7FC881; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                            <div style="width: 35px; height: 35px; background-color: #FFB840; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                            <div style="width: 35px; height: 35px; background-color: #E77271; border-radius: 50%;">
+                                <img src="images/Vector 7.svg" alt="">
+                            </div>
+                        </div>
+                        <button class="view-all"> View All </button>
+                    </div>
+                </div>
+                <div class="carousel-section">
+                    <div class="preview-arrow">
+                        <img src="images/Vector left.svg" alt="">
+                    </div>
+                    <div class="next-arrow">
+                        <img src="images/next.png" alt="">
+                    </div>
+                </div>
+                <div class="progress-div">
+                    <div class="course-completion">
+                        <p>Completion Progress</p>
+                        <div class="ui-ux">
+                            <div class="ui-ux-img">
+                                <img src="images/star.png" alt="">
+                            </div>
+                            <div class="ui-ux-text">
+                                <p>UI/UX fundamental</p>
+                                <p>Lesson 3</p>
+                            </div>
+                            <div class="view-all">
+                                <button> View Course </button>
+                            </div>
+                        </div>
+                        <div class="flutter">
+                            <div class="flutter-img">
+                                <img src="images/flutter.png" alt="">
+                            </div>
+                            <div class="flutter-text">
+                                <p>Flutter in 3 mins</p>
+                                <p>Lesson 5</p>
+                            </div>
+                            <div class="view-all">
+                                <button> View Course </button>
+                            </div>
+                        </div>
+                        <div class="laravel">
+                            <div class="laravel-img">
+                                <img src="images/laravel.png" alt="">
+                            </div>
+                            <div class="laravel-text">
+                                <p>Flutter in 3 mins</p>
+                                <p>Lesson 5</p>
+                            </div>
+                            <div class="view-all">
+                                <button> View Course </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="problem-solver">
+                        <p>Problem Solver of the week</p>
+                        <div class="problem-solver-list">
+                            <div class="problem-parent-container">
+                                <div class="problem-text-1">JA</div>
+                                <div class="problem-text-2">
+                                    <p>Joshua Ashiru</p>
+                                    <p>9.6/10 points</p>
+                                </div>
+                                <img src="images/medal gold.png" alt="">
+                            </div>
+                            <div class="problem-parent-container">
+                                <div class="problem-text-1">AA</div>
+                                <div class="problem-text-2">
+                                    <p>Joshua Ashiru</p>
+                                    <p>9.6/10 points</p>
+                                </div>
+                                <img src="images/medal silver.png" alt="">
+                            </div>
+                            <div class="problem-parent-container">
+                                <div class="problem-text-1">OT</div>
+                                <div class="problem-text-2">
+                                    <p>Joshua Ashiru</p>
+                                    <p>9.6/10 points</p>
+                                </div>
+                                <img src="images/medal bronze.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 right-container">
+                <div class="account-icons">
+                    <div class="user-image">
+                        <img src="images/user.png" alt="">
+                    </div>
+                    <p class="user-name">Adeola Ayo</p>
+                    <img src="images/logout.png" alt="" class="down-arrow">
+                    <img src="images/notification.png" class="notification-icon" alt="">
+                    <img src="images/setting-icon.png" alt="" class="setting-icon">
+                </div>
+                <div class="search-container">
+                    <img src="images/search-icon.png" alt="" class="search-icon">
+                    <input type="text" class="input-search" placeholder="Search Courses, Documents, Activities... ">
+                </div>
+                <div class="upcoming-activities">
+                    <div class="first-container">
+                        <div class="activities-text">
+                            <p>Upcoming Activities</p>
+                            <p>See all</p>
+                        </div>
+                        <div class="info1">
+                            <div class="problem-text-1">8</div>
+                            <div class="problem-text-2">
+                                <p>Code IQ fellowship Registration</p>
+                                <p>8th - 10th July 2021 &nbsp; &nbsp; <span class="iconify circle-icon"
+                                        data-icon="akar-icons:circle-fill"></span>
+                                    &nbsp; 8 A.M - 9 A.M <br>
+                                    Edulog Tutorial College, Blk 56, <br> Lagos State.
+                                </p>
+                            </div>
+                            <div class="direction-icon">
+                                <img src="images/forward-icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="info2">
+                            <div class="problem-text-1">13</div>
+                            <div class="problem-text-2">
+                                <p>3 days Bootcamp</p>
+                                <p>13th July 2021 &nbsp; &nbsp; <span class="iconify circle-icon"
+                                        data-icon="akar-icons:circle-fill"></span>
+                                    &nbsp; 8 A.M - 9 A.M <br>
+                                    School Hall, University Road,<br> Lagos State
+                                </p>
+                            </div>
+                            <div class="direction-icon">
+                                <img src="images/forward-icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="info3">
+                            <div class="problem-text-1">18</div>
+                            <div class="problem-text-2">
+                                <p>Tech Talk</p>
+                                <p>18th July 2021 &nbsp; &nbsp; <span class="iconify circle-icon"
+                                        data-icon="akar-icons:circle-fill"></span>
+                                    &nbsp; 8 A.M - 9 A.M <br>
+                                    18th July 2021
+                                </p>
+                            </div>
+                            <div class="direction-icon">
+                                <img src="images/forward-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-container">
+                        <div class="second-inner-container">
+                            <div class="highlighter-container">
+                                <p class="highlighter-text">Highlighter</p>
+                                <div class="today">
+                                    <p>
+                                        Today
+                                    </p>
+                                    <p><span class="iconify" data-icon="fa-solid:ellipsis-v"></span></p>
+                                </div>
+                                <div class="today-info">
+                                    <div>
+                                        <p><strong>Joseph updated Milestone</strong></p>
+                                        <p><span class="iconify" data-icon="emojione-v1:heavy-minus-sign"></span></p>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li><strong><span class="iconify"
+                                                        data-icon="emojione-v1:heavy-minus-sign"></span> Joseph
+                                                </strong>
+                                                updated <strong>the wireframe</strong></li>
+                                            <li><strong><span class="iconify"
+                                                        data-icon="emojione-v1:heavy-minus-sign"></span> Joseph
+                                                </strong> updated <strong>the Onboarding</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="yesterday">
+                                    <p class="yesterday-text">Yesterday</p>
+                                    <div class="yesterday-first-div">
+                                        <p>Joseph updated Milestone</p>
+                                        <!-- <p><i class="fas fa-plus"></i></p> -->
+                                        <p class="yesterday-add-icon"><span class="iconify"
+                                                data-icon="entypo:plus"></span></p>
+                                    </div>
+                                    <!-- <p class="yesterday-text">Yesterday</p> -->
+                                    <div class="yesterday-second-div">
+                                        <p>Joseph updated Milestone</p>
+                                        <!-- <p><i class="fas fa-plus"></i></p> -->
+                                        <p class="yesterday-add-icon2"><span class="iconify"
+                                                data-icon="entypo:plus"></span></p>
+                                    </div>
+                                </div>
+                                <div class="yesterday">
+                                    <p class="yesterday-text">Yesterday</p>
+                                    <div class="yesterday-first-div">
+                                        <p>Joseph updated Milestone</p>
+                                        <!-- <p><i class="fas fa-plus"></i></p> -->
+                                        <p class="yesterday-add-icon"><span class="iconify"
+                                                data-icon="entypo:plus"></span></p>
+                                    </div>
+                                    <!-- <p class="yesterday-text">Yesterday</p> -->
+                                    <div class="yesterday-second-div">
+                                        <p>Joseph updated Milestone</p>
+                                        <!-- <p><i class="fas fa-plus"></i></p> -->
+                                        <p class="yesterday-add-icon2"><span class="iconify"
+                                                data-icon="entypo:plus"></span></p>
+                                    </div>
+                                </div>
+                                <div class="yesterday">
+                                    <p class="yesterday-text">Yesterday</p>
+                                    <div class="yesterday-first-div">
+                                        <p>Joseph updated Milestone</p>
+                                        <!-- <p><i class="fas fa-plus"></i></p> -->
+                                        <p class="yesterday-add-icon"><span class="iconify"
+                                                data-icon="entypo:plus"></span></p>
+                                    </div>
+                                    <!-- <p class="yesterday-text">Yesterday</p> -->
+                                    <div class="yesterday-second-div">
+                                        <p>Joseph updated Milestone</p>
+                                        <!-- <p><i class="fas fa-plus"></i></p> -->
+                                        <p class="yesterday-add-icon2"><span class="iconify"
+                                                data-icon="entypo:plus"></span></p>
+                                    </div>
+                                </div>
+                                <button>View All</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="code iq.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

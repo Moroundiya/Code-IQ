@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card </title>
+    <link type="text/css" rel="stylesheet" href="css/credit card details.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/0a2fc2b5de.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</head>
+<body>
+    <div class="pop-up">
+        <div class="description-div">
+            <div class="desc-image">
+            </div>
+            <div class="desc-content">
+                <div class="course-description-text1">
+                    <p>Select Method of Payment</p>
+                    <p><span class="iconify" data-icon="fa-solid:times"></span></p>
+                </div>
+                <form action="">
+                    <ul>
+                        <li class="active-payment">
+                            <span class="iconify" data-icon="simple-line-icons:credit-card"></span>
+                            <label for="method1">Credit Card Or Debit</label>
+                            <input type="checkbox" value="Credit Card Or Debit" name="payment" class="credit-card" checked>
+                        </li>
+                        <label for="" class="card-info-title">Card Number</label> 
+                        <li>
+                            <input type="text" class="cc-card-number" placeholder="Enter 15 Digits Number" required>
+                            <span class="iconify cc-icon" data-icon="simple-line-icons:credit-card" placehold></span>
+                        </li>
+                        <div class="label-container">
+                        <label for="" class="card-info-title">Expiry Date</label> 
+                        <label for="" class="card-info-title">CVV</label> 
+                        </div>
+                        <div class="expire-details-container">
+                            <input type="text" placeholder="MM/YYYY" required>
+                            <p></p>
+                            <input type="text" placeholder="123" required>
+                        </div>
+                        <div class="label-container">
+                            <label for="" class="card-info-title">Enter card pin</label> 
+                            <label for="" class="card-info-title"></label> 
+                            </div>
+                            <div class="expire-details-container2">
+                                <input type="password" required>
+                                <p></p>
+                                <button type="submit">Proceed</button>
+                            </div>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/LOGO.png" alt="" class="navbar-brand navbar-logo">
+            </a>
+            <div id="nav-icon-anim" onclick="changeStyle()"  class="" data-bs-toggle="collapse"
+            data-bs-target="" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            <div class="shownavbar" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" style="margin-top: 30px;">
+                        <a href="index.html" class="active-menu nav-link">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span>
+                            My Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span>
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span>
+                            Fellowship
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span>
+                            Comic
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span>
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span>
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <div class="container-fluid" style="width: 100%; height: 100%; display: flex;">
+        <div class="sidebar">
+            <div class="brand-logo">
+                <img src="images/LOGO.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                            My Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html" class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span> &nbsp;
+                            Fellowship
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                            Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-collapse">
+            <div class="brand-logo">
+                <img src="images/favicon.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html"  class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        <div class=" course">
+            <div class="first-container">
+                <div class="collapse-account">
+                    <h4>BootCamps Courses</h4>
+                    <div class="account-icons">
+                        <div class="user-image">
+                            <img src="images/user.png" alt="">
+                        </div>
+                        <p class="user-name">Adeola Ayo</p>
+                        <img src="images/logout.png" alt="" class="down-arrow">
+                        <img src="images/notification.png" class="notification-icon" alt="">
+                        <img src="images/setting-icon.png" alt="" class="setting-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="search-container2">
+                <img src="images/search-icon.png" alt="" class="search-icon">
+                <input type="text" class="input-search" placeholder="Search Courses, Documents, Activities... ">
+            </div>
+            <div class="second-container">
+                <div class="course-filter">
+                    <p><strong>SIWES 2021 V 1.0</strong></p>
+                </div>
+                <div class="search-container">
+                    <img src="images/search-icon.png" alt="" class="search-icon">
+                    <input type="text" class="input-search" placeholder="Search for courses">
+                </div>
+            </div>
+            <div class="row courses-list">
+                <div class="col-lg-3 parent">
+                    <div class="badge">
+                        <span class="iconify badge-icon" data-icon="mdi:police-badge"></span>
+                    </div>
+                    <div class="course-logo">
+                        <img src="images/siwes logo1.png" alt="">
+                    </div>
+                    <p>FUNDAMENTAL <br> UI/UX </p>
+                    <div class="instructor-container">
+                        <img src="images/user.png" alt="">
+                        <p class="instructor-info"> Joe Micky</p>
+                    </div>
+                    <div>
+                        <span class="iconify chat-icon" data-icon="ion:chatbox-outline"></span>
+                        <span class="text1">15 Lessons</span>
+                        <span class="iconify clock-icon" data-icon="ant-design:field-time-outlined"></span>
+                        <span class="text1">40 Hours</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 parent">
+                    <div class="badge">
+                        <span class="iconify badge-icon" data-icon="mdi:police-badge"></span>
+                    </div>
+                    <div class="course-logo">
+                        <img src="images/siwes logo2.png" alt="">
+                    </div>
+                    <p>JAVA <br> PROGRAMMING </p>
+                    <div class="instructor-container">
+                        <img src="images/user.png" alt="">
+                        <p class="instructor-info"> Joe Micky</p>
+                    </div>
+                    <div>
+                        <span class="iconify chat-icon" data-icon="ion:chatbox-outline"></span>
+                        <span class="text1">15 Lessons</span>
+                        <span class="iconify clock-icon" data-icon="ant-design:field-time-outlined"></span>
+                        <span class="text1">40 Hours</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 parent">
+                    <div class="badge">
+                        <span class="iconify badge-icon" data-icon="mdi:police-badge"></span>
+                    </div>
+                    <div class="course-logo">
+                        <img src="images/siwes logo3.png" alt="">
+                    </div>
+                    <p>PHP</p>
+                    <div class="instructor-container">
+                        <img src="images/user.png" alt="">
+                        <p class="instructor-info"> Joe Micky</p>
+                    </div>
+                    <div>
+                        <span class="iconify chat-icon" data-icon="ion:chatbox-outline"></span>
+                        <span class="text1">15 Lessons</span>
+                        <span class="iconify clock-icon" data-icon="ant-design:field-time-outlined"></span>
+                        <span class="text1">40 Hours</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 parent">
+                    <div class="badge">
+                        <span class="iconify badge-icon" data-icon="mdi:police-badge"></span>
+                    </div>
+                    <div class="course-logo">
+                        <img src="images/siwes logo4.png" alt="">
+                    </div>
+                    <p>MOBILE APP <br> DEVELOPMENT </p>
+                    <div class="instructor-container">
+                        <img src="images/user.png" alt="">
+                        <p class="instructor-info"> Joe Micky</p>
+                    </div>
+                    <div>
+                        <span class="iconify chat-icon" data-icon="ion:chatbox-outline"></span>
+                        <span class="text1">15 Lessons</span>
+                        <span class="iconify clock-icon" data-icon="ant-design:field-time-outlined"></span>
+                        <span class="text1">40 Hours</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 parent">
+                    <div class="badge">
+                        <span class="iconify badge-icon" data-icon="mdi:police-badge"></span>
+                    </div>
+                    <div class="course-logo">
+                        <img src="images/siwes logo2.png" alt="">
+                    </div>
+                    <p>History of Graphic <br> Design </p>
+                    <div class="instructor-container">
+                        <img src="images/user.png" alt="">
+                        <p class="instructor-info"> Joe Micky</p>
+                    </div>
+                    <div>
+                        <span class="iconify chat-icon" data-icon="ion:chatbox-outline"></span>
+                        <span class="text1">15 Lessons</span>
+                        <span class="iconify clock-icon" data-icon="ant-design:field-time-outlined"></span>
+                        <span class="text1">40 Hours</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 parent">
+                    <div class="badge">
+                        <span class="iconify badge-icon" data-icon="mdi:police-badge"></span>
+                    </div>
+                    <div class="course-logo">
+                        <img src="images/siwes logo3.png" alt="">
+                    </div>
+                    <p>REACT JS <br> Course </p>
+                    <div class="instructor-container">
+                        <img src="images/user.png" alt="">
+                        <p class="instructor-info"> Joe Micky</p>
+                    </div>
+                    <div>
+                        <span class="iconify chat-icon" data-icon="ion:chatbox-outline"></span>
+                        <span class="text1">15 Lessons</span>
+                        <span class="iconify clock-icon" data-icon="ant-design:field-time-outlined"></span>
+                        <span class="text1">40 Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

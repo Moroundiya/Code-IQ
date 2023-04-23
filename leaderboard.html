@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link type="text/css" rel="stylesheet" href="css/leaderboard.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/LOGO.png" alt="" class="navbar-brand navbar-logo">
+            </a>
+            <div id="nav-icon-anim" onclick="changeStyle()"  class="" data-bs-toggle="collapse"
+            data-bs-target="" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            <div class="shownavbar" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" style="margin-top: 30px;">
+                        <a href="index.html" class="active-menu nav-link">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span>
+                            My Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span>
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span>
+                            Fellowship
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span>
+                            Comic
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span>
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span>
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <div class="container-fluid" style="width: 100%; height: 100%; display: flex;">
+        <div class="sidebar">
+            <div class="brand-logo">
+                <img src="images/LOGO.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                            My Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span> &nbsp;
+                            Fellowship
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                            Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html" class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-collapse">
+            <div class="brand-logo">
+                <img src="images/favicon.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html" class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=" course">
+            <div class="collapse-account">
+                <h4>Leaderboard</h4>
+                <div class="account-icons">
+                    <div class="user-image">
+                        <img src="images/user.png" alt="">
+                    </div>
+                    <p class="user-name">Adeola Ayo</p>
+                    <img src="images/logout.png" alt="" class="down-arrow">
+                    <img src="images/notification.png" class="notification-icon" alt="">
+                    <img src="images/setting-icon.png" alt="" class="setting-icon">
+                </div>
+            </div>
+            <div class="search-container2">
+                <img src="images/search-icon.png" alt="" class="search-icon">
+                <input type="text" class="input-search" placeholder="Search Courses, Documents, Activities... ">
+            </div>
+            <div class="second-container">
+                <div class="course-filter">
+                    Top  Performing Student
+                </div>
+                <div class="search-container">
+                    <img src="images/search-icon.png" alt="" class="search-icon">
+                    <input type="text" class="input-search" placeholder="Search for courses">
+                </div>
+            </div>
+            <div class="leaderboard-list">
+                <ul>
+                    <li class="active-comic">
+                        <a href="leaderboard.html">
+                            Backend 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            UI/UX Design
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            FrontEnd 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Mobile App Development
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row leaderboard-items">
+                <div class="title">
+                    <div class="rank">
+                        RANK
+                    </div>
+                    <div class="participants">
+                        PARTICIPANTS
+                    </div>
+                    <div class="points">
+                        POINTS
+                    </div>
+                    <div class="circle-icon"></div>
+                </div>
+                <div class="title2">
+                    <div class="rank">
+                        <img src="images/rank1.png" alt="">
+                    </div>
+                    <div class="participants">
+                        Joshua Ashiru
+                    </div>
+                    <div class="points">
+                        9.6/10 points
+                    </div>
+                    <div class="circle-icon">
+                        <div>JA</div>
+                    </div>
+                </div>
+                <div class="title2" id="title3">
+                    <div class="rank">
+                        <img src="images/rank2.png" alt="">
+                    </div>
+                    <div class="participants">
+                        Joshua Ashiru
+                    </div>
+                    <div class="points">
+                        9.6/10 points
+                    </div>
+                    <div class="circle-icon">
+                        <div>JA</div>
+                    </div>
+                </div>
+                <div class="title2" id="title4">
+                    <div class="rank">
+                        <img src="images/rank1.png" alt="">
+                    </div>
+                    <div class="participants">
+                        Joshua Ashiru
+                    </div>
+                    <div class="points">
+                        9.6/10 points
+                    </div>
+                    <div class="circle-icon">
+                        <div>JA</div>
+                    </div>
+                </div>
+                <div class="title2" id="title5">
+                    <div class="rank">
+                        <img src="images/rank1.png" alt="">
+                    </div>
+                    <div class="participants">
+                        Joshua Ashiru
+                    </div>
+                    <div class="points">
+                        9.6/10 points
+                    </div>
+                    <div class="circle-icon">
+                        <div>JA</div>
+                    </div>
+                </div>
+                <div class="title2" id="title6">
+                    <div class="rank">
+                        <img src="images/rank1.png" alt="">
+                    </div>
+                    <div class="participants">
+                        Joshua Ashiru
+                    </div>
+                    <div class="points">
+                        9.6/10 points
+                    </div>
+                    <div class="circle-icon">
+                        <div>JA</div>
+                    </div>
+                </div>
+                <div class="title2" id="title7">
+                    <div class="rank">
+                        <img src="images/rank1.png" alt="">
+                    </div>
+                    <div class="participants">
+                        Joshua Ashiru
+                    </div>
+                    <div class="points">
+                        9.6/10 points
+                    </div>
+                    <div class="circle-icon">
+                        <div>JA</div>
+                    </div>
+                </div>
+                <div class="title2" id="title8">
+                    <div class="rank">
+                        <img src="images/rank1.png" alt="">
+                    </div>
+                    <div class="participants">
+                        Joshua Ashiru
+                    </div>
+                    <div class="points">
+                        9.6/10 points
+                    </div>
+                    <div class="circle-icon">
+                        <div>JA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="code iq.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

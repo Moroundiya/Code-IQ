@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link type="text/css" rel="stylesheet" href="css/event bootcamp.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</head>
+<body>
+    <div class="pop-up">
+        <div class="description-div">
+           
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/LOGO.png" alt="" class="navbar-brand navbar-logo">
+            </a>
+            <div id="nav-icon-anim" onclick="changeStyle()"  class="" data-bs-toggle="collapse"
+            data-bs-target="" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            <div class="shownavbar" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active" style="margin-top: 30px;">
+                        <a href="index.html" class="active-menu nav-link">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span>
+                            My Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span>
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span>
+                            Fellowship
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span>
+                            Comic
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span>
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span>
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <div class="container-fluid" style="width: 100%; height: 100%; display: flex;">
+        <div class="sidebar">
+            <div class="brand-logo">
+                <img src="images/LOGO.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                            My Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                            Bootcamp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span> &nbsp;
+                            Fellowship
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                            Comic
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                            Leaderboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="event.html" class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                            Events
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-collapse">
+            <div class="brand-logo">
+                <img src="images/favicon.png" alt="Brand Logo">
+            </div>
+            <div class="menu">
+                <ul class="menu-list">
+                    <li>
+                        <a href="index.html">
+                            <span class="iconify sidebar-icon" data-icon="radix-icons:dashboard"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="all courses.html">
+                            <span class="iconify sidebar-icon" data-icon="ri:bar-chart-2-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bootcamp.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:cog-line"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="fellowship.html">
+                            <span class="iconify sidebar-icon" data-icon="clarity:users-solid"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comic.html">
+                            <span class="iconify sidebar-icon" data-icon="gg:smile-mouth-open"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leaderboard.html">
+                            <span class="iconify sidebar-icon" data-icon="iconoir:leaderboard-star"></span> &nbsp;
+                        </a>
+                    </li>
+                    <li>
+                        <a href="event.html" class="active-menu">
+                            <span class="iconify sidebar-icon" data-icon="bi:calendar2-event"></span> &nbsp;
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class=" course">
+            <div class="collapse-account">
+                <h4>Events</h4>
+                <div class="account-icons">
+                    <img src="images/notification.png" class="notification-icon" alt="">
+                    <img src="images/setting-icon.png" alt="" class="setting-icon">
+                </div>
+            </div>
+            <div class="search-container2">
+                <img src="images/search-icon.png" alt="" class="search-icon">
+                <input type="text" class="input-search" placeholder="Search Courses, Documents, Activities... ">
+            </div>
+            <div class="second-container">
+                <div class="search-container">
+                    <img src="images/search-icon.png" alt="" class="search-icon">
+                    <input type="text" class="input-search" placeholder="Search for courses">
+                </div>
+            </div>
+            <div class="event-container">
+                <div class="recent-updates">
+                    <p class="recent-title">RECENT UPDATES</p>
+                    <hr>
+                    <div class="info-div">
+                        <img src="images/update1.png" alt="">
+                        <p>SCHEDULED</p>
+                        <p>December 3, 2021</p>
+                        <p>This post is scheduled to be published in the future. It should not be displayed by the
+                            theme.</p>
+                    </div>
+                    <div class="info-div">
+                        <img src="images/update2.png" alt="">
+                        <p>BOOTCAMP</p>
+                        <p>December 3, 2021</p>
+                        <p>Stress! Everyone can relate to that overwhelming feeling. It creeps up on you at work, at
+                            home, sometimes even on your </p>
+                    </div>
+                    <div class="info-div">
+                        <img src="images/update3.png" alt="">
+                        <p>TECH TALK</p>
+                        <p>December 3, 2021</p>
+                        <p>So, if you are looking for such corporate events, which will effectively boost the efficiency
+                            and team-building attitude of </p>
+                    </div>
+                    <!-- <div class="info-div">
+                        <img src="images/update4.png" alt="">
+                        <p>HACKATHON</p>
+                        <p>December 3, 2021</p>
+                        <p>So, if you are looking for such corporate events, which will effectively boost the efficiency
+                            and team-building attitude of </p>
+                    </div> -->
+                </div>
+                <div class="upcoming-events">
+                    <p class="recent-title">UPCOMING EVENTS</p>
+                    <hr>
+                    <div class="event-contents">
+                        <div class="child1">
+                            <p class="day">January</p>
+                            <p class="date">10</p>
+                            <p class="year">2022</p>
+                            <hr class="line-divide">
+                            <table>
+                                <tr>
+                                    <td>Start:</td>
+                                    <td>January 10,2021 @ 8:00am</td>
+                                </tr>
+                                <tr class="spacer">
+                                </tr>
+                                <tr>
+                                    <td>End:</td>
+                                    <td>August 10,2021 @ 8:00am</td>
+                                </tr>
+                                <tr class="spacer">
+                                </tr>
+                                <tr>
+                                    <td>Costs</td>
+                                    <td>$400</td>
+                                </tr>
+                                <tr class="spacer">
+                                </tr>
+                                <tr>
+                                    <td>Event Category:</td>
+                                    <td class="colored">BOOTCAMP, TECH TALK
+                                        AND HACKATHON</td>
+                                </tr>
+                                <tr class="spacer">
+                                </tr>
+                                <tr>
+                                    <td>Website:</td>
+                                    <td class="colored">
+                                        <a href="https://codeiq.com/">www.codeIq.com</a>
+                                    </td>
+                                </tr>
+                                <tr class="spacer">
+                                </tr>
+                                <tr>
+                                    <td>Start:</td>
+                                    <td>January 10,2021 @ 8:00am</td>
+                                </tr>
+                                <tr class="spacer">
+                                </tr>
+                            </table>
+                            <h5><strong>VENUE</strong></h5>
+                            <div class="addresss-div">
+                                <div class="first-child">
+                                    <span class="iconify" data-icon="akar-icons:location"></span>
+                                </div>
+                                <div class="second-child">
+                                    <p>Abuja</p>
+                                    <p>Kingsley Hall Abuja, Nigeria</p>
+                                    <p>+ Google Map</p>
+                                </div>
+                            </div>
+                            <hr class="line-divide">
+                            <h5><strong>SCHEDULE</strong></h5>
+                            <div class="schedule-all">
+                                <div class="schedule-phase">
+                                    <p><span class="iconify-inline" data-icon="carbon:dot-mark"></span></p>
+                                    <p>PHASE 1 : Tech Talk </p>
+                                    <p>Jan 10 - 20 </p>
+                                </div>
+                                <div class="schedule-phase">
+                                    <p><span class="iconify-inline" data-icon="carbon:dot-mark"></span></p>
+                                    <p>PHASE 1 : Tech Talk </p>
+                                    <p>Jan 10 - 20 </p>
+                                </div>
+                                <div class="schedule-phase">
+                                    <p><span class="iconify-inline" data-icon="carbon:dot-mark"></span></p>
+                                    <p>PHASE 1 : Tech Talk </p>
+                                    <p>Jan 10 - 20 </p>
+                                </div>
+                                <div class="line-strike">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="child2">
+                            <h4><strong> <span class="code-iq-color"> CODE IQ </span>
+                                    <br> BOOTCAMP 2022.1
+                                </strong></h4>
+                            <p class="join-desc">
+                                Join the thousands of software engineers advancing their careers through our learning
+                                community
+                            </p>
+                            <img src="images/event image.png" alt="" class="event-image">
+                            <p class="article">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                                dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                Donec pede justo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                                magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                Donec pede justo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                                magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                Donec pede justo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            </p>
+                            <button class="continue">
+                                CONTINUE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="testimonial"><strong> TESTIMONIALS</strong></h5>
+            <div class="carousel">
+                <div class="left-arrow">
+                    <!-- <img src="images/left arrow.png" alt="" class="left-arrow-img"> -->
+                    <span class="iconify" data-icon="bi:arrow-left-circle"></span>
+                </div>
+                <div class="carousel-desc">
+                    <div class="image-container">
+                        <img src="images/teti.png" alt="">
+                    </div>
+                    <div class="content-container">
+                        <p class="customer-name">Staurt James</p>
+                        <p class="customer-job">Junior Mobile Developer</p>
+                        <p class="customer-review">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. 
+                            Nulla consequat massa quis enim. Donec pede justo.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean 
+                        </p>
+                    </div>
+                </div>
+                <div class="right-arrow">
+                    <!-- <img src="images/right arrow.png" alt="" class="left-arrow-img"> -->
+                    <span class="iconify" data-icon="bi:arrow-right-circle"></span>
+                </div>
+            </div>
+            <div class="sponsor">
+                <p>OUR PARTNERS</p>
+                <img src="images/sponsor1.png" alt="" class="sponsor-img">
+                <img src="images/sponsor2.png" alt="" class="sponsor-img">
+                <img src="images/sponsor4.png" alt="" class="sponsor-img">
+                <img src="images/sponsor5.png" alt="" class="sponsor-img">
+            </div>
+        </div>
+        <script src="code iq.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
